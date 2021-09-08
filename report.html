@@ -10,9 +10,12 @@
 
         div.dark-button {
             position: absolute;
-            top: 25px;
-            height: 50px;
-            width: 80px;
+            top: 10px;
+        }
+
+        .btndrk {
+            width: 42px;
+            height: 38px;
         }
 
         .report-buttons {
@@ -52,26 +55,45 @@
 </head>
 <body>
 <div class="dark-button">
-    <button onclick="darkMode()">Toggle dark mode</button>
+    <button type="button" class="btndrk" onclick="darkMode()" id="light" style="display: block;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+             class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+    <button type="button" class="btndrk" onclick="darkMode()" id="dark" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
     <script>
         function darkMode() {
             const element = document.body;
-            element.classList.toggle("dark-mode");
+            if (document.getElementById("light").style.display === "block") {
+                element.classList.toggle("dark-mode");
+                document.getElementById("light").style.display = "none";
+                document.getElementById("dark").style.display = "block";
+            }
+            else {
+                element.classList.toggle("dark-mode");
+                document.getElementById("dark").style.display = "none";
+                document.getElementById("light").style.display = "block";
+            }
         }
     </script>
 </div>
 <div class="center">
     <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br>З ДИСЦИПЛІНИ « РОЗРОБЛЕННЯ WEB-ЗАСТОСУВАННЬ»</h1>
     <h2>Бригада №4 Студенти групи ІА-04<br>Біла Анна // Бриль Андрій // Овчаренко Дар`я</h2>
-        <button class="report-buttons" onclick="lab1()">Лабораторна<br>робота №1</button>
-        <button class="report-buttons" onclick="lab2()">Лабораторна<br>робота №2</button>
-        <button class="report-buttons" onclick="lab3()">Лабораторна<br>робота №3</button>
-        <button class="report-buttons" onclick="lab4()">Лабораторна<br>робота №4</button>
-        <button class="report-buttons" onclick="lab5()">Лабораторна<br>робота №5</button>
-        <button class="report-buttons" onclick="lab6()">Лабораторна<br>робота №6</button>
-        <button class="report-buttons" onclick="lab7()">Лабораторна<br>робота №7</button>
-        <button class="report-buttons" onclick="lab8()">Лабораторна<br>робота №8</button>
-        <button class="report-buttons" onclick="lab9()">Лабораторна<br>робота №9</button>
+    <button class="report-buttons" onclick="lab1()">Лабораторна<br>робота №1</button>
+    <button class="report-buttons" onclick="lab2()">Лабораторна<br>робота №2</button>
+    <button class="report-buttons" onclick="lab3()">Лабораторна<br>робота №3</button>
+    <button class="report-buttons" onclick="lab4()">Лабораторна<br>робота №4</button>
+    <button class="report-buttons" onclick="lab5()">Лабораторна<br>робота №5</button>
+    <button class="report-buttons" onclick="lab6()">Лабораторна<br>робота №6</button>
+    <button class="report-buttons" onclick="lab7()">Лабораторна<br>робота №7</button>
+    <button class="report-buttons" onclick="lab8()">Лабораторна<br>робота №8</button>
+    <button class="report-buttons" onclick="lab9()">Лабораторна<br>робота №9</button>
 </div>
 <script>
     function lab1() {
@@ -122,21 +144,20 @@
 </script>
 <div id="Lab2" class="Lab2" style="display: none;">
     <h3>Лабораторна №2</h3>
-        <p>TEst</p>
-        <button class="lab-buttons">Опис предметного<br>середовища</button>
-        <br>
-        <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №2</button>
-        <br>
-        <button class="lab-buttons">Структура документа</button>
-        <br>
-        <button class="lab-buttons">HTML-код таблиць</button>
-        <br>
-        <button class="lab-buttons">HTML-код форми</button>
-        <br>
-        <button class="lab-buttons">HTML-код зображення</button>
-        <br>
-        <button class="lab-buttons">Висновки</button>
-        <br>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №2</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
 </div>
 <script>
     function lab3() {
