@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+    <title>Report</title>
+    <style>
+        div.center {
+            text-align: center;
+        }
+
+        div.dark-button {
+            position: absolute;
+            top: 25px;
+            height: 50px;
+            width: 80px;
+        }
+
+        .report-buttons {
+            margin: 3px;
+            height: 50px;
+            width: 115px;
+        }
+
+        .lab-buttons {
+            height: 65px;
+            width: 200px;
+            position: relative;
+            top: 20px;
+            left: 60px;
+            margin: 6px;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: #181a1b;
+            color: white;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="dark-button">
+    <button onclick="darkMode()">Toggle dark mode</button>
+    <script>
+        function darkMode() {
+            const element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</div>
+<div class="center">
+    <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br>З ДИСЦИПЛІНИ « РОЗРОБЛЕННЯ WEB-ЗАСТОСУВАННЬ»</h1>
+    <h2>Бригада №4 Студенти групи ІА-04<br>Біла Анна // Бриль Андрій // Овчаренко Дар`я</h2>
+    <nobr>
+        <button class="report-buttons" onclick="lab1()">Лабораторна<br>робота №1</button>
+        <button class="report-buttons" onclick="lab2()">Лабораторна<br>робота №2</button>
+        <button class="report-buttons" onclick="lab3()">Лабораторна<br>робота №3</button>
+        <button class="report-buttons" onclick="lab4()">Лабораторна<br>робота №4</button>
+        <button class="report-buttons" onclick="lab5()">Лабораторна<br>робота №5</button>
+        <button class="report-buttons" onclick="lab6()">Лабораторна<br>робота №6</button>
+        <button class="report-buttons" onclick="lab7()">Лабораторна<br>робота №7</button>
+        <button class="report-buttons" onclick="lab8()">Лабораторна<br>робота №8</button>
+        <button class="report-buttons" onclick="lab9()">Лабораторна<br>робота №9</button>
+    </nobr>
+</div>
+<script>
+    function lab1() {
+        if (document.getElementById("Lab1").style.display === "none") {
+            document.getElementById("Lab1").style.display = "block";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab1" style="display: none;">
+    <h3>Лабораторна №1</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №1</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab2() {
+        if (document.getElementById("Lab2").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "block";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab2" style="display: none;">
+    <h3>Лабораторна №2</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №2</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab3() {
+        if (document.getElementById("Lab3").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "block";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab3" style="display: none;">
+    <h3>Лабораторна №3</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №3</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab4() {
+        if (document.getElementById("Lab4").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "block";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab4" style="display: none;">
+    <h3>Лабораторна №4</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №4</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab5() {
+        if (document.getElementById("Lab5").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "block";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab5" style="display: none;">
+    <h3>Лабораторна №5</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №5</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab6() {
+        if (document.getElementById("Lab6").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "block";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab6" style="display: none;">
+    <h3>Лабораторна №6</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №6</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab7() {
+        if (document.getElementById("Lab7").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "block";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab7" style="display: none;">
+    <h3>Лабораторна №7</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №7</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab8() {
+        if (document.getElementById("Lab8").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "block";
+            document.getElementById("Lab9").style.display = "none";
+        }
+    }
+</script>
+<div id="Lab8" style="display: none;">
+    <h3>Лабораторна №8</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №8</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+<script>
+    function lab9() {
+        if (document.getElementById("Lab9").style.display === "none") {
+            document.getElementById("Lab1").style.display = "none";
+            document.getElementById("Lab2").style.display = "none";
+            document.getElementById("Lab3").style.display = "none";
+            document.getElementById("Lab4").style.display = "none";
+            document.getElementById("Lab5").style.display = "none";
+            document.getElementById("Lab6").style.display = "none";
+            document.getElementById("Lab7").style.display = "none";
+            document.getElementById("Lab8").style.display = "none";
+            document.getElementById("Lab9").style.display = "block";
+        }
+    }
+</script>
+<div id="Lab9" style="display: none;">
+    <h3>Лабораторна №9</h3>
+    <button class="lab-buttons">Опис предметного<br>середовища</button>
+    <br>
+    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №9</button>
+    <br>
+    <button class="lab-buttons">Структура документа</button>
+    <br>
+    <button class="lab-buttons">HTML-код таблиць</button>
+    <br>
+    <button class="lab-buttons">HTML-код форми</button>
+    <br>
+    <button class="lab-buttons">HTML-код зображення</button>
+    <br>
+    <button class="lab-buttons">Висновки</button>
+    <br>
+</div>
+</body>
+</html>
