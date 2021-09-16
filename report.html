@@ -44,11 +44,29 @@
         }
 
         h3 {
-            text-align: center;
+            height: 65px;
+            width: 200px;
+            position: relative;
+            top: 20px;
+            left: 60px;
+            margin: 6px;
         }
 
         p {
             text-align: center;
+        }
+
+        .Report1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #Desc1 {
+            flex-grow: 9;
+        }
+
+        #Lab1 {
+            flex-grow: 1;
         }
 
     </style>
@@ -110,28 +128,48 @@
         }
     }
 </script>
-<div id="Lab1" style="display: none;">
-    <h3>Лабораторна №1</h3>
-    <button class="lab-buttons">Опис предметного<br>середовища</button>
-    <br>
-    <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №1</button>
-    <br>
-    <button class="lab-buttons">Структура документа</button>
-    <br>
-    <button class="lab-buttons">HTML-код таблиць</button>
-    <br>
-    <button class="lab-buttons">HTML-код форми</button>
-    <br>
-    <button class="lab-buttons">HTML-код зображення</button>
-    <br>
-    <button class="lab-buttons">Висновки</button>
-    <br>
-    <!--
-    <div id="report">
-
+<div class="Report1">
+    <div id="Lab1" id="Lab1" style="display: none;">
+        <h3>Лабораторна №1</h3>
+        <button class="lab-buttons" onclick="descr1()">Опис предметного<br>середовища</button>
+        <br>
+        <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №1</button>
+        <br>
+        <button class="lab-buttons">Структура документа</button>
+        <br>
+        <button class="lab-buttons">HTML-код таблиць</button>
+        <br>
+        <button class="lab-buttons">HTML-код форми</button>
+        <br>
+        <button class="lab-buttons">HTML-код зображення</button>
+        <br>
+        <button class="lab-buttons">Висновки</button>
+        <br>
     </div>
-    -->
+    <div id="Desc1" style="display: none;">
+        <p><br><br><br><br><br><br>
+            WEB-додаток містить відео різного жанру і формату.
+            <br>
+            Користувач може переглядати їх, шукати, залишати коментарі. Також є можливість зареєструватися і після цього додавати та видаляти відео, ці ж самі дії з коментарями.
+            <br>
+            Функціональні можливості WEB-додатку
+            <br>
+            незареєстрований користувач може переглядати відео, фільми, мультфільми і мати доступ до інформації про них;
+            <br>
+            зареєстрований користувач може додавати нові відео та фільми, яких немає;
+            <br>
+            будь-який користувач може здійснювати пошук та оцінювати відеоматеріали;
+        </p>
+    </div>
+
 </div>
+<script>
+    function descr1() {
+
+        document.getElementById("Desc1").style.display = "block";
+    }
+</script>
+<!--
 <script>
     function lab2() {
         if (document.getElementById("Lab2").style.display === "none") {
@@ -387,6 +425,7 @@
     <br>
     <button class="lab-buttons">Висновки</button>
     <br>
+    -->
 </div>
 </body>
 </html>
