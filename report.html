@@ -133,7 +133,7 @@
         <h3>Лабораторна №1</h3>
         <button class="lab-buttons" onclick="descr1()">Опис предметного<br>середовища</button>
         <br>
-        <button class="lab-buttons">Тема Мета Місце<br>розташування лабораторної №1</button>
+        <button class="lab-buttons" onclick="theme1()">Тема Мета Місце<br>розташування лабораторної №1</button>
         <br>
         <button class="lab-buttons">Структура документа</button>
         <br>
@@ -161,12 +161,49 @@
             будь-який користувач може здійснювати пошук та оцінювати відеоматеріали;
         </p>
     </div>
-
+    <div id="Theme1" style="display: none;">
+        <p><br><br><br><br><br><br>
+            Тема лабораторної роботи
+            <br>
+            веб-застосунок, який складається з набору відео, фільмів, мультфільмів на різні теми і жанри;
+            <br>
+            Мета
+            <br>
+            створення веб-застосунку, який допомагає користувачеві знайти потрібні йому відео та фільми;
+            <br>
+            Опис предметної області
+            <br>
+            платформа для перегляду відео та фільмів, які цікавлять людей;
+            <br>
+            Основні сутності
+            <br>
+            фільми
+            <br>
+            відео
+            <br>
+            серіали
+            <br>
+            мультфільми
+            <br>
+            Актори
+            <br>
+            Адмін(додавання/видалення відео, редагування опису компонентів сайту, писати і видаляти коментарі)
+            <br>
+            гість(пошук, перегляд, тільки писати коментарі)
+        </p>
+    </div>
 </div>
+
 <script>
     function descr1() {
-
+        document.getElementById("Theme1").style.display = "none";
         document.getElementById("Desc1").style.display = "block";
+    }
+</script>
+<script>
+    function theme1() {
+        document.getElementById("Theme1").style.display = "block";
+        document.getElementById("Desc1").style.display = "none";
     }
 </script>
 <!--
