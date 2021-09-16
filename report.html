@@ -61,7 +61,7 @@
             flex-direction: row;
         }
 
-        #Desc1 {
+        #Desc1, #Theme1, #Vysnovok1 {
             flex-grow: 9;
         }
 
@@ -143,7 +143,7 @@
         <br>
         <button class="lab-buttons">HTML-код зображення</button>
         <br>
-        <button class="lab-buttons">Висновки</button>
+        <button class="lab-buttons" onclick="vysnovok1()">Висновки</button>
         <br>
     </div>
     <div id="Desc1" style="display: none;">
@@ -192,17 +192,36 @@
             гість(пошук, перегляд, тільки писати коментарі)
         </p>
     </div>
+    <div id="Vysnovok1" style="display: none;">
+        <p><br><br><br><br><br><br>
+            Висновки:
+            <br>
+            отже, ми набули навичок роботи з HTML-документом, таблицями,формами, зображеннями, посиланнями;
+            <br>
+            обрали тематику для свого застосунку;
+            <br>створили шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+        </p>
+    </div>
 </div>
 
 <script>
     function descr1() {
+        document.getElementById("Vysnovok1").style.display = "none";
         document.getElementById("Theme1").style.display = "none";
         document.getElementById("Desc1").style.display = "block";
     }
 </script>
 <script>
     function theme1() {
+        document.getElementById("Vysnovok1").style.display = "none";
         document.getElementById("Theme1").style.display = "block";
+        document.getElementById("Desc1").style.display = "none";
+    }
+</script>
+<script>
+    function vysnovok1() {
+        document.getElementById("Vysnovok1").style.display = "block";
+        document.getElementById("Theme1").style.display = "none";
         document.getElementById("Desc1").style.display = "none";
     }
 </script>
