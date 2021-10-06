@@ -100,11 +100,9 @@
         }
     </script>
 </div>
-<script src="main.js"></script>
 <div class="center">
     <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br>З ДИСЦИПЛІНИ «РОЗРОБЛЕННЯ WEB-ЗАСТОСУВАННЬ»</h1>
     <h2>Бригада №4 Студенти групи ІА-04<br>Біла Анна // Бриль Андрій // Овчаренко Дар`я // Перепелиця Владислав</h2>
-    <a href="#" data-switch="Lab1">Лабораторна<br>робота №1</a>
     <button class="report-buttons" data-switch="Lab1">Лабораторна<br>робота №1</button>
     <button class="report-buttons" onclick="lab2()">Лабораторна<br>робота №2</button>
     <button class="report-buttons" onclick="lab3()">Лабораторна<br>робота №3</button>
@@ -115,27 +113,12 @@
     <button class="report-buttons" onclick="lab8()">Лабораторна<br>робота №8</button>
     <button class="report-buttons" onclick="lab9()">Лабораторна<br>робота №9</button>
 </div>
-<script>
-    function lab1() {
-        if (document.getElementById("Lab1").style.display === "none") {
-            document.getElementById("Lab1").style.display = "block";
-            document.getElementById("Lab2").style.display = "none";
-            document.getElementById("Lab3").style.display = "none";
-            document.getElementById("Lab4").style.display = "none";
-            document.getElementById("Lab5").style.display = "none";
-            document.getElementById("Lab6").style.display = "none";
-            document.getElementById("Lab7").style.display = "none";
-            document.getElementById("Lab8").style.display = "none";
-            document.getElementById("Lab9").style.display = "none";
-        }
-    }
-</script>
-<div class="Report1">
-    <div id="Lab1" style="display: none;">
+<div class="Report1" id="Report1">
+    <div id="Lab1">
         <h3>Лабораторна №1</h3>
-        <button class="lab-buttons" onclick="descr1()">Опис предметного<br>середовища</button>
+        <button class="lab-buttons" data-switch="Desc1">Опис предметного<br>середовища</button>
         <br>
-        <button class="lab-buttons" onclick="theme1()">Тема Мета Місце<br>розташування лабораторної №1</button>
+        <button class="lab-buttons" data-switch="Theme1">Тема Мета Місце<br>розташування лабораторної №1</button>
         <br>
         <button class="lab-buttons">Структура документа</button>
         <br>
@@ -145,10 +128,10 @@
         <br>
         <button class="lab-buttons">HTML-код зображення</button>
         <br>
-        <button class="lab-buttons" onclick="vysnovok1()">Висновки</button>
+        <button class="lab-buttons" data-switch="Vysnovok1">Висновки</button>
         <br>
     </div>
-    <div id="Desc1" style="display: none;">
+    <div id="Desc1">
         <p><br><br><br><br><br><br>
             WEB-додаток містить відео різного жанру і формату.
             <br>
@@ -163,7 +146,7 @@
             будь-який користувач може здійснювати пошук та оцінювати відеоматеріали;
         </p>
     </div>
-    <div id="Theme1" style="display: none;">
+    <div id="Theme1">
         <p><br><br><br><br><br><br>
             Тема лабораторної роботи
             <br>
@@ -194,7 +177,7 @@
             гість(пошук, перегляд, тільки писати коментарі)
         </p>
     </div>
-    <div id="Vysnovok1" style="display: none;">
+    <div id="Vysnovok1">
         <p><br><br><br><br><br><br>
             Висновки:
             <br>
@@ -205,28 +188,7 @@
         </p>
     </div>
 </div>
-
-<script>
-    function descr1() {
-        document.getElementById("Vysnovok1").style.display = "none";
-        document.getElementById("Theme1").style.display = "none";
-        document.getElementById("Desc1").style.display = "block";
-    }
-</script>
-<script>
-    function theme1() {
-        document.getElementById("Vysnovok1").style.display = "none";
-        document.getElementById("Theme1").style.display = "block";
-        document.getElementById("Desc1").style.display = "none";
-    }
-</script>
-<script>
-    function vysnovok1() {
-        document.getElementById("Vysnovok1").style.display = "block";
-        document.getElementById("Theme1").style.display = "none";
-        document.getElementById("Desc1").style.display = "none";
-    }
-</script>
+<script src="main.js"></script>
 <!--
 <script>
     function lab2() {
