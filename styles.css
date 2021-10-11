@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
+
+:root {
+    --clr-dark: #111111;
+    --clr-light: #eef8fa;
+    --btn-volor: #a2d6e0;
+}
+
+body {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    --theme-switch: var(--clr-dark);
+}
+
+.darkmode {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    --theme-switch: var(--clr-light);
+}
+
+div.center {
+    text-align: center;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--theme-switch);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+label {
+    display: block;
+    text-indent: -9999px;
+    height: 30px;
+    width: 60px;
+    background-color: #a2d6e0;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+label::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #111111;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+
+}
+
+input:checked + label::after {
+    /* left: calc(100% - 2.5px); */
+    left: calc(100% - 25px);
+    background-color: #a2d6e0;
+}
+
+input:checked + label {
+    background-color: #111111;
+    border: 2px solid #f5f5f5;
+}
+
+.report-buttons {
+    background-color: var(--btn-volor);
+    border-radius: 5px;
+    margin: 3px;
+    height: 50px;
+    width: 115px;
+}
+
+.lab-buttons {
+    background-color: var(--btn-volor);
+    border-radius: 5px;
+    height: 65px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    margin: 6px;
+}
+
+h3 {
+    height: 65px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    margin: 6px;
+}
+
+p {
+    text-align: center;
+}
+
+.Report {
+    display: flex;
+    flex-direction: row;
+}
+
+#Desc, #Theme, #Vysnovok {
+    flex-grow: 9;
+}
+
+#Lab {
+    flex-grow: 1;
+}
