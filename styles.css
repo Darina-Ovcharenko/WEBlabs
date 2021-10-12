@@ -1,21 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
 
 :root {
     --clr-dark: #111111;
     --clr-light: #eef8fa;
     --btn-volor: #a2d6e0;
+    --txt-volor: #eef8fa;
+    --gradient-dark: #262626;
+    --gradient-light: #fffff5;
 }
 
 body {
-    background-color: var(--clr-light);
+    background: var(--clr-light);
+    background: linear-gradient(90deg, var(--clr-light) 0%, var(--clr-light) 45%, var(--gradient-light) 100%);
     color: var(--clr-dark);
     --theme-switch: var(--clr-dark);
+    font-family: "Gill Sans", sans-serif;
 }
 
 .darkmode {
+    background: var(--clr-dark);
+    background: linear-gradient(90deg, var(--clr-dark) 0%, var(--clr-dark) 45%, var(--gradient-dark) 100%);
     background-color: var(--clr-dark);
     color: var(--clr-light);
     --theme-switch: var(--clr-light);
+    font-family: "Gill Sans", sans-serif;
 }
 
 div.center {
@@ -37,47 +44,6 @@ div.center {
   height: 30px;
 }
 
-input {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-label {
-    display: block;
-    text-indent: -9999px;
-    height: 30px;
-    width: 60px;
-    background-color: #a2d6e0;
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
-}
-
-label::after {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    background-color: #111111;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    transition: 0.5s ease;
-
-}
-
-input:checked + label::after {
-    /* left: calc(100% - 2.5px); */
-    left: calc(100% - 25px);
-    background-color: #a2d6e0;
-}
-
-input:checked + label {
-    background-color: #111111;
-    border: 2px solid #f5f5f5;
-}
 
 .report-buttons {
     background-color: var(--btn-volor);
@@ -108,7 +74,10 @@ h3 {
 }
 
 p {
-    text-align: center;
+    position: relative;
+    text-align: left;
+    left: 100px;
+    width: 1500px;
 }
 
 .Report {
