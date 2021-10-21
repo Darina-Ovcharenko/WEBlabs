@@ -53,6 +53,15 @@ div.center {
     width: 115px;
 }
 
+.extra-buttons {
+    background-color: var(--btn-volor);
+    border-radius: 25px;
+    margin: 9px;
+    height: 50px;
+    width: 115px;
+
+}
+
 .lab-buttons {
     background-color: var(--btn-volor);
     border-radius: 5px;
