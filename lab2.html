@@ -9,6 +9,7 @@
 <div class="center">
     <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br>З ДИСЦИПЛІНИ «РОЗРОБЛЕННЯ WEB-ЗАСТОСУВАННЬ»</h1>
     <h2>Бригада №4 Студенти групи ІА-04<br>Біла Анна // Бриль Андрій // Овчаренко Дар`я // Перепелиця Владислав</h2>
+    <button class="report-buttons" onclick="location.href='https://github.com/AndrewEdgers/clipflick'">Clipflick<br>на Github</button>
     <button class="report-buttons" onclick="document.location='lab1.html'">Лабораторна<br>робота №1</button>
     <button class="report-buttons" onclick="document.location='lab2.html'">Лабораторна<br>робота №2</button>
     <button class="report-buttons" onclick="document.location='lab3.html'">Лабораторна<br>робота №3</button>
@@ -18,24 +19,117 @@
     <button class="report-buttons" onclick="document.location='lab7.html'">Лабораторна<br>робота №7</button>
     <button class="report-buttons" onclick="document.location='lab8.html'">Лабораторна<br>робота №8</button>
     <button class="report-buttons" onclick="document.location='lab9.html'">Лабораторна<br>робота №9</button>
+    <button class="report-buttons" onclick="document.location='mugshots.html'">Фотографії<br>студентів</button>
 </div>
 <div class="Report">
     <div id="Lab">
         <h3>Лабораторна №2</h3>
-        <button class="lab-buttons" data-switch="Desc">Опис предметного<br>середовища</button>
+
+        <button class="lab-buttons" data-switch="Theme">Постановка задачі<br>Лабораторної роботи№2</button>
         <br>
-        <button class="lab-buttons" data-switch="Theme">Тема Мета Місце<br>розташування лабораторної №2</button>
+        <button class="lab-buttons"  data-switch="Identifiers">Ідентифікаори</button>
         <br>
-        <button class="lab-buttons">Структура документа</button>
+        <button class="lab-buttons"data-switch="Indentations">Відступи</button>
         <br>
-        <button class="lab-buttons">HTML-код таблиць</button>
+        <button class="lab-buttons" data-switch="Color properties and background">Властивості кольору і фону</button>
         <br>
-        <button class="lab-buttons">HTML-код форми</button>
+        <button class="lab-buttons" data-switch="Selectors">Селектори</button>
         <br>
-        <button class="lab-buttons">HTML-код зображення</button>
+        <button class="lab-buttons">Інші слектори</button>
+        <br>
+        <button class="lab-buttons">Селектори тегу і класу</button>
         <br>
         <button class="lab-buttons" data-switch="Vysnovok">Висновки</button>
         <br>
+    </div>
+
+    <div id="Theme">
+        <p><br><br><br><br><br><br>
+            <b>Тема лабораторної роботи:</b>
+            <br>
+            Каскадні таблиці. Селектори .Ідентифікатори. Стильове оформлення текстових елементів в HTML-документах.
+            <br><br>
+            <b>Мета:</b>
+            Придбати практичні навички роботи  з селекторами,ідентифікаторами,
+            <br>
+            списками,  різноманітними властивостями кольору і фону,
+            <br>
+            зовнішними та внутрішними  відступами,  плаваючими елементами,
+            <br>
+            оформленням текстових елементів
+            <br>
+        </p>
+    </div>
+
+    <div id="Identifiers">
+        <p><br><br><br><br><br><br>
+            Ідентифікатор визначає унікальне ім'я елемента,
+            <br>
+            яке використовується для зміни його стилю і звернення
+            <br>
+            до нього через скрипти. Також ми використали таку властивість як flex-grow.
+            <br>
+            Вона визначає те, на скільки окремий flex-блок може бути більше сусідніх елементів.
+            <br>
+            У нашому випадку це на 9 y Desc, Theme, Vysnovok та на 1 y Lab.
+            <br>
+        </p>
+        <p><img src="images/id.jpg" alt="id" width="500" height="400"></p>
+    </div>
+
+    <div id="Indentations">
+        <p><br><br><br><br><br><br>
+            Є внутрішні і зовнішні відступи.
+            <br>
+            Для додавання і управління шириною внутрішніх відступів з усіх чотирьох сторін елемента використовується властивість padding.
+            <br>
+            Для додавання і управління шириною зовнішніх відступів з усіх чотирьох сторін елемента використовується властивість margin.
+            <br>
+            Ми використали і padding і margin для задання відступів.
+            <br>
+        </p>
+        <p><img src="images/indentations.jpg" alt="indent" width="650" height="700"></p>
+    </div>
+    <div id="Color properties and background">
+        <p><br><br><br><br><br><br>
+            Для виконання завдання і більш привабливого вигляду нашого застосунку,
+            <br>
+            ми додали колір і фон. Для задання фону ми використовували background
+            <br>
+            або background-color і надавали йому відтінок, який потрібно.Також ми використали border,
+            <br>
+            що дозволяє одночасно встановити товщину, стиль і колір кордону навколо елемента.
+            <br>
+            У нас linear-gradient, що робить переходи від одного кольору до іншого.
+            <br>
+        </p>
+        <p><img src="images/colors1.jpg" alt="color1" width="672" height="700"></p>
+        <p><img src="images/colors2.jpg" alt="color2" width="500" height="700"></p>
+    </div>
+    <div id="Selectors">
+        <p><br><br><br><br><br><br>
+            Селектор - це частина CSS-правила, яка повідомляє браузеру,
+            <br>
+            до якого елементу веб-сторінки буде застосований CSS стиль.
+            <br>
+            Ми використали багато селекторів.
+            <br>
+        </p>
+        <p><img src="images/select1.jpg" alt="selector1" width="600" height="400"></p>
+        <p><img src="images/select2.jpg" alt="selector2" width="500" height="400"></p>
+    </div>
+
+    <div id="Vysnovok">
+        <p><br><br><br><br><br><br>
+            <b>Висновки:</b>
+            Отже,у цій лабораторній роботі ми навчилися використовувати селектори та ідентифікатори.
+            <br>
+            Оформлювали сторінку нашого сайту різноманітними властивостями кольору і фону,
+            <br>
+            зовнішними та внутрішними  відступами, оформленням текстових елементів.
+            <br>
+
+        </p>
     </div>
 </div>
 <button id="dark-mode-toggle" class="dark-mode-toggle">
@@ -46,5 +140,6 @@
     </svg>
 </button>
 <script src="darkmode.js"></script>
+<script src="menu.js"></script>
 </body>
 </html>
