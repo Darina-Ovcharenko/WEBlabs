@@ -94,7 +94,7 @@ p {
     flex-direction: row;
 }
 
-#Desc, #Theme, #Vysnovok {
+#Desc, #Theme, #Vysnovok #Appearance {
     flex-grow: 9;
 }
 
