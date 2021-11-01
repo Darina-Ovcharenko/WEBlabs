@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>#1</title>
+</head>
+<body>
+<button onclick="Arrays()">Generate array</button>
+<p id="array"></p>
+<p id="MAXeven"></p>
+<p id="MINevenID"></p>
+<p id="arrayAfter"></p>
+<p id="arraySorted"></p>
+<script>
+    function Arrays() {
+        const size = window.prompt("Enter array size: ");
+        const A = Array.from({length: size}, () => Math.floor(Math.random() * size));
+
+        document.getElementById("array").innerHTML = "Array: [" + A + "]" + " - size: " + size;
+
+        let max = A[0];
+        for (let i = 0; i < A.length; i++) {
+            if (A[i] % 2 === 0 && A[i] > A[max])
+                max = A[i];
+        }
+
+        document.getElementById("MAXeven").innerHTML = "Max even number: " + max;
+
+        let min = A[0];
+        for (let i = 0; i < A.length; i++) {
+            if (i % 2 === 0 && A[i] < A[min])
+                min = A[i];
+        }
+
+        document.getElementById("MINevenID").innerHTML = "Min number with even index: " + min;
+
+        const maxI = A.indexOf(max);
+        const minI = A.indexOf(min);
+
+        const tmp = A[maxI];
+        A[maxI] = A[minI];
+        A[minI] = tmp;
+
+        document.getElementById("arrayAfter").innerHTML = "Array after: [" + A + "]";
+
+        function insertionSort(A) {
+            let n = A.length;
+            for (let i = 1; i < n; i++) {
+                let current = A[i];
+                let j = i - 1;
+                while ((j > -1) && (current < A[j])) {
+                    A[j + 1] = A[j];
+                    j--;
+                }
+                A[j + 1] = current;
+            }
+            return A;
+        }
+
+        document.getElementById("arraySorted").innerHTML = "Array insertion sorted: [" + insertionSort(A) + "]";
+    }
+</script>
+</body>
+</html>
