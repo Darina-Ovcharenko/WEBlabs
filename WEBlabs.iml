@@ -10,5 +10,10 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="font-awesome" level="application" />
     <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="platform" level="application" />
+    <orderEntry type="library" name="clock" level="application" />
   </component>
 </module>

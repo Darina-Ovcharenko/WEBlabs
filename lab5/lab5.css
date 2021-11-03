@@ -1,0 +1,79 @@
+body{
+    background-color: #6A5ACD;
+}
+.body {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: fixed; /*scroll on mobile*/
+    background-color:#6A5ACD;
+}
+
+body {
+    color: #000000;
+    font: 300 16px 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.content {
+
+    color: #000000;
+    height: 100vh;
+    padding: 5em;
+    text-align: center;
+}
+
+/* Accordion
+================================================== */
+.acc {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.acc__card {
+    margin: 2em;
+    position: relative;
+}
+.acc__title {
+    background-color: #a2d6e0;
+    box-shadow: 0 0 20px ;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    padding: 1em 1.5em;
+    position: relative;
+    text-align: left;
+}
+::after {
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4a6e78;
+    border-bottom: 1px solid #4a6e78;
+    position: absolute;
+    right: 10px;
+    content: " ";
+    top: 17px;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease-in-out;
+}
+.active::after {
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.acc__panel {
+    background-color: #a2d6e0;
+    color: #000000;
+    display: none;
+    margin: 0;
+    padding: 2em;
+    text-align: left;
+}
