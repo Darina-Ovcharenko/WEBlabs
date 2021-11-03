@@ -1,4 +1,4 @@
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 :root {
     --clr-dark: #111111;
@@ -52,6 +52,8 @@ div.center {
     margin: 3px;
     height: 50px;
     width: 115px;
+    border: 2px outset;
+    cursor: pointer;
 }
 
 .extra-buttons {
@@ -60,7 +62,8 @@ div.center {
     margin: 9px;
     height: 50px;
     width: 115px;
-
+    border: 2px outset;
+    cursor: pointer;
 }
 
 .lab-buttons {
@@ -72,6 +75,22 @@ div.center {
     top: 20px;
     left: 60px;
     margin: 6px;
+    border: 2px outset;
+    cursor: pointer;
+}
+
+.report-buttons:hover, .report-buttons:focus-visible,
+.lab-buttons:hover, .lab-buttons:focus-visible,
+.extra-buttons:hover, .extra-buttons:focus-visible {
+    transform: scale(1.1);
+}
+
+.lab-buttons:active, .report-buttons:active, .extra-buttons:active {
+    border: 2px inset;
+}
+
+.lab-buttons:focus {
+    border: 2px inset;
 }
 
 h3 {
