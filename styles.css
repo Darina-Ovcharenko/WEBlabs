@@ -1,3 +1,4 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 :root {
     --clr-dark: #111111;
@@ -100,4 +101,39 @@ p {
 
 #Lab {
     flex-grow: 1;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+    position: relative;
+    top: 0;
+    right: 200px;
+    margin: 6px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+    width: 40px;
+    height: 28px;
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding-top: 12px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+
+}
+
+.socialbtns .fa:hover {
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #000;
 }

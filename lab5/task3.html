@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href="lab5.css" rel="stylesheet">
+
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+</head>
+<body>
+<div class="content">
+    <h1>Accordion</h1>
+
+    <div class="acc">
+        <div class="acc__card">
+            <div class="acc__title">Дев'ять чи десять?</div>
+            <div class="acc__panel">
+                Дев'ять!
+            </div>
+        </div>
+        <div class="acc__card">
+            <div class="acc__title">Життя цікаве!</div>
+            <div class="acc__panel">
+                І мотивація то є сильна!
+            </div>
+        </div>
+        <div class="acc__card">
+            <div class="acc__title">Хто я?</div>
+            <div class="acc__panel">
+                Президент України, успішний адвокат, звичайна домогосподарка, студент-філософ з Могилянки, агроном з
+                Черкащини.
+            </div>
+        </div>
+    </div>
+    <div><h1>Datepicker</h1>
+        <p>Date: <label for="datepicker"></label><input type="text" id="datepicker"></p>
+    </div>
+</div>
+
+</body>
+<script src="lab5.js"></script>
+</html>
