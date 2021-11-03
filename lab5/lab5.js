@@ -1,5 +1,5 @@
-$(function() {
-    $('.acc__title').click(function(j) {
+$(function () {
+    $('.acc__title').click(function (j) {
 
         const dropDown = $(this).closest('.acc__card').find('.acc__panel');
         $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();

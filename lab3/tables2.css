@@ -11,7 +11,8 @@ div {
     width: 530px;
     border-collapse: collapse;
 }
-.ui{
+
+.ui {
     height: 30px;
     width: 200px;
     margin-left: 20px;
@@ -20,7 +21,8 @@ div {
     background: #fdfdfd;
     border: 1px solid black;
 }
-.pl{
+
+.pl {
     height: 40px;
     width: 180px;
     background: crimson;
@@ -31,13 +33,14 @@ div {
 
 
 #two {
-    background:#0066FF;
+    background: #0066FF;
     float: left;
     width: 80px;
     height: 450px;
     border-collapse: collapse;
 }
-#klo{
+
+#klo {
     height: 60px;
     width: 400px;
     background: crimson;
@@ -46,6 +49,7 @@ div {
     margin-top: 20px;
 
 }
+
 #three {
     background: #ffffff;
     width: 180px;
@@ -64,7 +68,8 @@ div {
     background: #0066FF;
     border: 1px solid black;
 }
-.vc{
+
+.vc {
     background: white;
     border: 1px solid black;
     width: 530px;

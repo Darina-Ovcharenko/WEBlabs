@@ -1,6 +1,7 @@
-body{
+body {
     background-color: #6A5ACD;
 }
+
 .body {
     background-position: center center;
     background-size: cover;
@@ -8,7 +9,7 @@ body{
     background-origin: padding-box;
     background-clip: border-box;
     background-attachment: fixed; /*scroll on mobile*/
-    background-color:#6A5ACD;
+    background-color: #6A5ACD;
 }
 
 body {
@@ -38,13 +39,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     max-width: 800px;
 }
+
 .acc__card {
     margin: 2em;
     position: relative;
 }
+
 .acc__title {
     background-color: #a2d6e0;
-    box-shadow: 0 0 20px ;
+    box-shadow: 0 0 20px;
     color: #000000;
     cursor: pointer;
     display: block;
@@ -52,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     text-align: left;
 }
+
 ::after {
     width: 8px;
     height: 8px;
@@ -64,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(-45deg);
     transition: all 0.2s ease-in-out;
 }
+
 .active::after {
     transform: rotate(45deg);
     transition: all 0.2s ease-in-out;

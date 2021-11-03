@@ -3,6 +3,7 @@ th {
     padding: 20px 15px;
     background: blue;
 }
+
 td {
     padding: 300px 15px;
     border: 1px solid grey;
@@ -51,7 +52,7 @@ div {
 
 #footer {
     position: absolute;
-    background:#0066FF ;
+    background: #0066FF;
     height: 60px;
     width: 530px;
     margin-top: 450px;

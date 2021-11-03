@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
     <title>Mugshots</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
     <link href="images/document.png" rel="icon" type="image"/>
 </head>
 <body>
@@ -25,14 +25,14 @@
     <button class="extra-buttons" onclick="document.location='mugshots.html'">Фотографії<br>студентів</button>
 </div>
 <div>
-    <img src="mugshots/photo_2020-11-06_16-02-04.jpg" alt="Біла Анна">
-    <img src="mugshots/photo_2021-09-28_22-58-18.jpg" alt="Бриль Андрій">
-    <img src="mugshots/photo_2021-03-25_22-30-15.jpg" alt="Овчаренко Дар`я">
+    <img alt="Біла Анна" src="mugshots/photo_2020-11-06_16-02-04.jpg">
+    <img alt="Бриль Андрій" src="mugshots/photo_2021-09-28_22-58-18.jpg">
+    <img alt="Овчаренко Дар`я" src="mugshots/photo_2021-03-25_22-30-15.jpg">
 </div>
-<button id="dark-mode-toggle" class="dark-mode-toggle">
-    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-        <path fill="currentColor"
-              d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+<button class="dark-mode-toggle" id="dark-mode-toggle">
+    <svg viewBox="0 0 496 496" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+              fill="currentColor"
               transform="translate(-8 -8)"/>
     </svg>
 </button>
