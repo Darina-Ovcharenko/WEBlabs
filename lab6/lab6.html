@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="lab6.css">
+ <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src= " https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+</head>
+<body>
+<form class="form" id="main_form" action="javascript:void(0);" autocomplete="off">
+  <div class="form-row input-field">
+    <input id="first_name" type="text" class="input" name="FirstName">
+    <label for="first_name">Name</label>
+  </div>
+  <div class="form-row input-field">
+    <input id="your_email" type="email" class="input" name="email">
+    <label for="your_email">Email</label>
+  </div>
+  <div class="form-row input-field">
+    <input id="your_password" type="password" class="input password" name="password" autocomplete="new-password">
+    <label for="your_password">Password</label>
+  </div>
+  <div class="form-row form-row-btn">
+      <button class="report-buttons" onclick="document.location='L6.html'">Sign in</button>
+  </div>
+</form>
+</body>
+<p class="marquee"><span id="dtText"></span></p>
+<script>
+    const today = new Date();
+    document.getElementById('dtText').innerHTML="Today's Date is :"+today;
+</script>
+<style>
+    .marquee {
+        width: 400px;
+        height: 40px;
+        margin: 0 auto;
+        background: #740d94;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        color: #fdfdfd;
+        font-size:30px;
+    }
+
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        text-indent: 0;
+        animation: marquee 15s linear infinite;
+    }
+
+    .marquee span:hover {
+        animation-play-state: paused
+    }
+
+    @keyframes marquee {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(-100%, 0); }
+    }
+</style>
+<script src="lab6.js"></script>
+</html>
