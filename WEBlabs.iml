@@ -14,5 +14,8 @@
     <orderEntry type="library" name="clock" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="platform" level="application" />
+    <orderEntry type="library" name="clock" level="application" />
+    <orderEntry type="library" name="jquery-3.6.0" level="application" />
   </component>
 </module>

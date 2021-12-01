@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery UI</title>
+    <link href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+    <script>
+        $(function () {
+            let availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme",
+                "Test"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Autocomplete</a></li>
+        <li><a href="#tabs-2">Datepicker</a></li>
+    </ul>
+    <div id="tabs-1">
+        <div class="ui-widget">
+            <label for="tags">Tags: </label>
+            <input id="tags">
+        </div>
+    </div>
+    <div id="tabs-2">
+        <p><label for="datepicker">Date: </label><input id="datepicker" type="text"></p>
+    </div>
+</div>
+
+
+</body>
+</html>
